@@ -8,6 +8,8 @@
 
 #import "ESAppDelegate.h"
 
+#import "EntryController.h"
+
 @implementation ESAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +18,16 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"%ld entries stored",(unsigned long)[[EntryController sharedInstance].entries count]);
+    
+    Entry *entry = [Entry new];
+    entry.title = @"A new journal entry";
+    entry.note = @"I want to write a very long note, but I'm out of time.";
+    entry.timestamp = [NSDate date];
+    
+    [[EntryController sharedInstance] addEntry:entry];
+    
     return YES;
 }
 
