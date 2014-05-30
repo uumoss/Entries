@@ -37,6 +37,10 @@ static NSString * const entryListKey = @"entryList";
 
 - (void)addEntry:(Entry *)entry {
 
+    if (!entry) {
+        return;
+    }
+    
     NSMutableArray *mutableEntries = [[NSMutableArray alloc] initWithArray:self.entries];
     [mutableEntries addObject:entry];
 
@@ -44,6 +48,10 @@ static NSString * const entryListKey = @"entryList";
 }
 
 - (void)removeEntry:(Entry *)entry {
+    
+    if (!entry) {
+        return;
+    }
 
     NSMutableArray *mutableEntries = self.entries.mutableCopy;
     [mutableEntries removeObject:entry];
