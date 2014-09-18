@@ -7,6 +7,7 @@
 //
 
 #import "ESAppDelegate.h"
+#import "EntryController.h"
 
 @implementation ESAppDelegate
 
@@ -14,6 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+
+    [[EntryController sharedInstance] addEntry:@{@"title": @"Some Title huh?", @"Text": @"Random text that no-one will see"}];
+    
+    NSLog(@"%d Entries", [[[EntryController sharedInstance] entries] count]);
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
