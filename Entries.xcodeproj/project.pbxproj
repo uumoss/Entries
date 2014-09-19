@@ -19,6 +19,7 @@
 		711A50D119388277005642EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711A50B919388277005642EF /* UIKit.framework */; };
 		711A50D919388277005642EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 711A50D719388277005642EF /* InfoPlist.strings */; };
 		711A50DB19388277005642EF /* EntriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 711A50DA19388277005642EF /* EntriesTests.m */; };
+		C8CFC5E719CBB7E0005B8545 /* ESEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8CFC5E619CBB7E0005B8545 /* ESEntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		711A50D619388277005642EF /* EntriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EntriesTests-Info.plist"; sourceTree = "<group>"; };
 		711A50D819388277005642EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		711A50DA19388277005642EF /* EntriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntriesTests.m; sourceTree = "<group>"; };
+		C8CFC5E519CBB7E0005B8545 /* ESEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESEntryController.h; sourceTree = "<group>"; };
+		C8CFC5E619CBB7E0005B8545 /* ESEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESEntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				711A50C419388277005642EF /* ESAppDelegate.h */,
 				711A50C519388277005642EF /* ESAppDelegate.m */,
+				C8CFC5E519CBB7E0005B8545 /* ESEntryController.h */,
+				C8CFC5E619CBB7E0005B8545 /* ESEntryController.m */,
 				711A50C719388277005642EF /* Images.xcassets */,
 				711A50BC19388277005642EF /* Supporting Files */,
 			);
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711A50C619388277005642EF /* ESAppDelegate.m in Sources */,
+				C8CFC5E719CBB7E0005B8545 /* ESEntryController.m in Sources */,
 				711A50C219388277005642EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +444,7 @@
 				711A50E019388277005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		711A50E119388277005642EF /* Build configuration list for PBXNativeTarget "EntriesTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				711A50E319388277005642EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
